@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadbury Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="#home" class="logo" aria-label="Cadbury home">
+      <img src="images/cadbury-logo.svg" alt="Cadbury">
+    </a>
+    <button id="menuBtn">Menu</button>
+    <nav id="nav">
+      <a href="#about">About</a>
+      <a href="#explore">Explore</a>
+      <a href="#products">Products</a>
+      <a href="#recipes">Recipes</a>
+      <a href="#gifting">Gifting</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <video class="hero-video" autoplay muted loop playsinline poster="images/chocolate.jpg" aria-hidden="true">
+      <source src="videos/cadbury-background.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <section class="intro-panel" aria-label="Cadbury intro">
+    <div>
+      <p class="tag">Chocolate moments made brighter</p>
+      <h1>Get cooking with chocolate joy</h1>
+      <p>Discover treats, recipes, gifts and sweet ideas in a Cadbury-inspired purple and gold style.</p>
+      <a class="btn" href="#recipes">Explore Recipes</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="tag">About</p>
+    <h2>A friendly chocolate story</h2>
+  </section>
+
+  <section id="explore">
+    <p class="tag">Explore</p>
+    <h2>Sweet things to discover</h2>
+    <div class="grid">
+     
+      <div class="card">
+        <div class="pic"><img src="images/chocolate.jpg" alt="Chocolate bar in melted chocolate"></div>
+        <h3>Competition</h3>
+        <p>Join a fun chocolate promotion.</p>
+      </div>
+      <div class="card">
+        <div class="pic crop-left"><img src="images/chocolate.jpg" alt="Cadbury chocolate splash"></div>
+        <h3>Brand Story</h3>
+        <p>Learn about smooth chocolate treats.</p>
+      </div>
+      <div class="card">
+        <div class="pic crop-right"><img src="images/chocolate.jpg" alt="Cream and chocolate swirl"></div>
+        <h3>Gift Ideas</h3>
+        <p>Find treats for special moments.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="products">
+    <p class="tag">Products</p>
+    <h2>Browse the range</h2>
+    <div class="filters">
+      <button class="filter active" data-type="all">All</button>
+      <button class="filter" data-type="bars">Bars</button>
+      <button class="filter" data-type="sharing">Sharing</button>
+    </div>
+    <div class="grid">
+      <div class="card product" data-type="bars">
+        <div class="pic product-shot"><img src="images/chocolate.jpg" alt="Classic chocolate bar"></div>
+        <h3>Classic Bar</h3>
+        <p>Smooth chocolate style bar.</p>
+      </div>
+      <div class="card product" data-type="sharing">
+        <div class="pic product-shot crop-left"><img src="images/chocolate.jpg" alt="Chocolate sharing pack"></div>
+        <h3>Share Pack</h3>
+        <p>Perfect for movie nights.</p>
+      </div>
+      <div class="card product" data-type="bars">
+        <div class="pic product-shot crop-right"><img src="images/chocolate.jpg" alt="Caramel chocolate bar"></div>
+        <h3>Caramel Bar</h3>
+        <p>Soft caramel filled treat.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="recipes">
+    <p class="tag">Recipes</p>
+    <h2>Favourite recipes</h2>
+    <input id="search" type="text" placeholder="Search cake, brownie or cookie">
+    <div class="grid">
+      <div class="card recipe" data-name="cake">
+        <div class="pic recipe-shot"><img src="images/chocolate.jpg" alt="Chocolate tiffin cake inspiration"></div>
+        <h3>Tiffin Cake</h3>
+        <p>Easy chocolate tray bake.</p>
+      </div>
+      <div class="card recipe" data-name="brownie">
+        <div class="pic recipe-shot crop-left"><img src="images/chocolate.jpg" alt="Fudge brownie chocolate inspiration"></div>
+        <h3>Fudge Brownie</h3>
+        <p>Rich and soft chocolate dessert.</p>
+      </div>
+      <div class="card recipe" data-name="cookie">
+        <div class="pic recipe-shot crop-right"><img src="images/chocolate.jpg" alt="Chocolate cookie inspiration"></div>
+        <h3>Chocolate Cookies</h3>
+        <p>Crisp outside and soft inside.</p>
+      </div>
+    </div>
+    <p id="empty">No recipes found.</p>
+  </section>
+
+  <section id="gifting">
+    <p class="tag">Gifting</p>
+    <h2>Build a gift idea</h2>
+    <div class="gift-box">
+      <select id="occasion">
+        <option value="birthday">Birthday</option>
+        <option value="thanks">Thank You</option>
+        <option value="party">Celebration</option>
+      </select>
+      <button id="giftBtn">Create Idea</button>
+      <h3 id="giftTitle">Birthday Treat Box</h3>
+      <p id="giftText">Add a chocolate bar, share bag and cheerful note.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Educational Cadbury-style demo. Not an official Cadbury website.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
